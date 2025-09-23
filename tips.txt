@@ -1,0 +1,4 @@
+How create an aplicattion with Next.js? run the comand "npx create-next-app"
+npx -> call the node.js
+npx create next app -> Create the aplicattion
+This comand must be always initialized when you wanted to create an aplicattion
