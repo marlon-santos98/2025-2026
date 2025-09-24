@@ -2,3 +2,11 @@ How create an aplicattion with Next.js? run the comand "npx create-next-app"
 npx -> call the node.js
 npx create next app -> Create the aplicattion
 This comand must be always initialized when you wanted to create an aplicattion
+
+how test the aplicattion? Run on console the comand: "npm run dev" -> this will start a local web server
+
+How the folders work?
+Public -> Store images
+src -> main file
+
+export default function Home() -> Sintax used to create and export a function
