@@ -10,3 +10,4 @@ Public -> Store images
 src -> main file
 
 export default function Home() -> Sintax used to create and export a function
+<></> -> Tag fragment
