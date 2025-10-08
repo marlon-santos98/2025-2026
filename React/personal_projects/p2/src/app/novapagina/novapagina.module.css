@@ -1,0 +1,20 @@
+.main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_container{
+    padding: 40px;
+    flex: 0 1 300px;
+    background-color: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 80px;
+}

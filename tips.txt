@@ -11,3 +11,5 @@ src -> main file
 
 export default function Home() -> Sintax used to create and export a function
 <></> -> Tag fragment
+
+Layout.js -> Used for reuse a component, like a top or footer
