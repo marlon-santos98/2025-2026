@@ -13,3 +13,7 @@ export default function Home() -> Sintax used to create and export a function
 <></> -> Tag fragment
 
 Layout.js -> Used for reuse a component, like a top or footer
+
+Click Events:
+Action onClick: Fired after the button click
+'use client': It always must be used when onClick is called
