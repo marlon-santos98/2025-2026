@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    padding: 10px;
+}
+.title button{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+}

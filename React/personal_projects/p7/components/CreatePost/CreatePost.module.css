@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 30%;
+    margin: 0 auto;
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+}
