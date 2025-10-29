@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  // CORREÇÃO: Usamos o caminho padrão (output) para 
+  // que nossos serviços possam encontrá-lo facilmente.
+  output = "node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ----------------------------------------------------
+// NOSSA "PLANTA-BAIXA" (O MODELO DE DADOS)
+// ----------------------------------------------------
+
+// "model Post" diz ao Prisma:
+// "Crie uma tabela no banco de dados chamada 'Post'"
+model Post {
+  // O Prisma vai traduzir cada linha disto em uma coluna SQL
+
+  // "id Int" = uma coluna chamada 'id' do tipo 'Inteiro'
+  // "@id" = esta é a "Chave Primária" (o identificador único)
+  // "@default(autoincrement())" = diz ao *banco de dados* para
+  // automaticamente numerar os posts (1, 2, 3...)
+  id        Int      @id @default(autoincrement())
+
+  // "title String" = uma coluna 'title' do tipo 'String' (texto)
+  // Por padrão, esta coluna é OBRIGATÓRIA.
+  title     String
+
+  // "body String?" = uma coluna 'body' do tipo 'String'
+  // O '?' no final diz ao Prisma que esta coluna é OPCIONAL
+  // (pode ser nula).
+  body      String?
+
+  // Estes são bônus, mas são ótimas práticas:
+  
+  // "@default(now())" = define automaticamente a data de criação
+  // para o momento exato em que o post foi criado.
+  createdAt DateTime @default(now())
+
+  // "@updatedAt" = atualiza automaticamente esta data
+  // toda vez que este post for modificado.
+  updatedAt DateTime @updatedAt
+}
