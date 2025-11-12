@@ -17,3 +17,10 @@ Layout.js -> Used for reuse a component, like a top or footer
 Click Events:
 Action onClick: Fired after the button click
 'use client': It always must be used when onClick is called
+
+service -> Especialista(Contém a regra(lógica) do negócio)
+controller -> Gerente - Precisa saber o telefone do especialista(Service) para delegar o trabalho
+Route -> Chama essa função, dando req, res, é async pq vai esperar pelo servico
+bcryptjs: O nome da ferramenta (a versão em JavaScript puro do bcrypt, que é mais fácil de instalar).
+(Por que não -D?): O bcryptjs não é uma ferramenta de desenvolvimento. Ele é um "Motor" 🚗. Seu servidor em produção (online) precisa dele para:
+Criptografar senhas no cadastro. Comparar senhas no login. Portanto, ele é uma dependency normal, não uma devDependency.
